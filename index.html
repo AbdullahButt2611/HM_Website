@@ -1,0 +1,91 @@
+<html lang="en" dir="ltr">
+    <head>
+        <title>House Moverz | Free Sources</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width","initial-scale=1.0">
+    </head>
+    <body>
+        <div class="index-body">
+        <div class="container">
+            <div class="title">Let's Get Moving</div>
+            <form action="#" id="indexForm">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">First Name</span>
+                        <input type="text" placeholder="First Name" id="first" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Last Name</span>
+                        <input type="text" placeholder="Last Name" id="last" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email Address</span>
+                        <input type="text" placeholder="Enter Mail" id="email" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Contact Number</span>
+                        <input type="text" placeholder="Contact Number" id="contact" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Moving To</span>
+                        <input type="text" placeholder="Moving To" id="movingto" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Moving From</span>
+                        <input type="text" placeholder="Moving From" id="movingfrom" required>
+                    </div>
+                </div>
+
+                <div class="gender-details">
+                    <input type="radio" name="gender" id="dot-1">
+                    <input type="radio" name="gender" id="dot-2">
+                    <input type="radio" name="gender" id="dot-3">
+                    <span class="gender-title">Gender</span>
+                    <div class="category">
+                        <label for="dot-1">
+                            <span class="dot one"></span>
+                            <span class="gender">Male</span>
+
+                        </label>
+                        <label for="dot-2">
+                            <span class="dot two"></span>
+                            <span class="gender">Female</span>
+                            
+                        </label>
+                        <label for="dot-3">
+                            <span class="dot three"></span>
+                            <span class="gender">Prefer Not To Say</span>
+                            
+                        </label>
+                    </div>
+                </div>
+
+                <div class="button" action="getinput()">
+                    <input type="submit" value="Submit">
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <script>
+
+        var form = document.getElementById("indexForm");
+
+        form.addEventListener('submit',function(event)
+        {
+            event.preventDefault()
+
+            var first = document.getElementById("first").value
+            var last = document.getElementById("last").value
+            var email = document.getElementById("email").value
+            var contact = document.getElementById("contact").value
+            var to = document.getElementById("movingto").value
+            var from = document.getElementById("movingfrom").value
+
+           // console.log(first)
+        })
+
+    </script>
+    </body>
+</html>
